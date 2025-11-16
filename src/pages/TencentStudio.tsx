@@ -1,9 +1,7 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { Users, Camera, Mic, HelpCircle, LogOut } from 'lucide-react'
+import { Users, Camera, HelpCircle } from 'lucide-react'
 
 export default function TencentStudio() {
-  const navigate = useNavigate()
   const [cameraAllowed, setCameraAllowed] = useState(false)
 
   const handleAllowAccess = async () => {

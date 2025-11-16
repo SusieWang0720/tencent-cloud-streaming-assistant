@@ -5,7 +5,6 @@ import {
   ChevronDown, 
   Copy, 
   Check, 
-  RotateCcw, 
   Play, 
   Plus, 
   Edit, 
@@ -43,7 +42,6 @@ export default function EncoderRTMP() {
   // Get stream info based on streamId
   const streamInfo = streamId ? streamData[streamId] : { name: 'Live November 16', date: 'November 16' }
   const streamName = streamInfo.name
-  const streamDate = streamInfo.date
 
   const protocols = {
     rtmp: {

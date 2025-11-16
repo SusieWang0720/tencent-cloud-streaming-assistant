@@ -1,4 +1,4 @@
-import { HardDrive, Upload, Download, Trash2, Folder, FileVideo } from 'lucide-react'
+import { HardDrive, Upload, Download, Trash2, FileVideo } from 'lucide-react'
 
 export default function Storage() {
   const storageStats = {
