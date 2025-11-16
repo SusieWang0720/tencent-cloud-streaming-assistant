@@ -12,7 +12,7 @@ import EncoderRTMP from './pages/EncoderRTMP'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/tencent-cloud-streaming-assistant">
       <Routes>
         {/* Pages without Layout */}
         <Route path="/tencent-studio" element={<TencentStudio />} />
