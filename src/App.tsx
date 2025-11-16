@@ -11,8 +11,11 @@ import TencentStudio from './pages/TencentStudio'
 import EncoderRTMP from './pages/EncoderRTMP'
 
 function App() {
+  // Use basename only in production (GitHub Pages)
+  const basename = import.meta.env.PROD ? '/tencent-cloud-streaming-assistant' : ''
+  
   return (
-    <Router basename="/tencent-cloud-streaming-assistant">
+    <Router basename={basename}>
       <Routes>
         {/* Pages without Layout */}
         <Route path="/tencent-studio" element={<TencentStudio />} />
